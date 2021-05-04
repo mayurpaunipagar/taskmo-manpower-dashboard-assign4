@@ -1,0 +1,126 @@
+.new-profile-container {
+  flex-grow: 1;
+}
+/* 
+.my-navigation {
+  float: left;
+  background-color: #7302ea;
+  width: 200px;
+  height: 100vh;
+} */
+
+.my-new-profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f7f8fc;
+}
+.my-new-profile-form-container {
+  /* margin: 50px; */
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.45);
+
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.my-new-profile-img {
+  height: 70vh;
+}
+@media (max-width: 900px) {
+  .my-new-profile-img {
+    height: 40vw;
+  }
+}
+.new-profile-text {
+  margin: 30px;
+  color: #7302ea;
+  font-weight: bold;
+}
+.my-form {
+  display: flex;
+  flex-direction: column;
+  margin-left: 70px;
+  margin-right: 20px;
+}
+.profile-input-field {
+  width: 300px;
+  outline: none;
+  padding: 5px;
+  font-size: 10px;
+  border: 2px solid #e5e5e5;
+  border-radius: 5px;
+  background-color: #f7f8fc;
+  margin-bottom: 3px;
+}
+.profile-input-label {
+  font-size: 10px;
+  margin-top: 10px;
+  margin-bottom: 1px;
+}
+.profile-button-container {
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 15px;
+}
+
+.profile-btn-clear,
+.profile-btn-add {
+  margin: 5px;
+}
+
+.profile-btn-clear {
+  background-color: white;
+  color: #7302ea;
+}
+.profile-btn-add {
+  background-color: #7302ea;
+  font-weight: bold;
+  color: white;
+}
+
+.btn-style {
+  border: 1px solid #7302ea;
+  padding: 5px 15px;
+}
+.btn-style:focus {
+  outline: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.45);
+}
+.btn-style:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.45);
+}
+/* 
+.my-navigation .user-container {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 10px 60px 10px;
+}
+.my-navigation .user-info {
+  margin-left: 10px;
+  color: #e5e5e5;
+}
+.user-info .user-name {
+  color: yellow;
+  font-size: small;
+}
+
+.my-navigation .nav-item {
+  color: #e5e5e5;
+  display: flex;
+  flex-direction: row;
+  padding: 20px 10px;
+}
+
+.my-navigation .nav-item:hover {
+  border-left: 10px solid #e5e5e5;
+  background-color: rgb(140, 58, 216);
+  cursor: pointer;
+}
+.nav-item .nav-text {
+  margin-left: 20px;
+} */

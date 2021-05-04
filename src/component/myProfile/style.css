@@ -1,0 +1,55 @@
+.my-profile-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7f8fc;
+}
+.myProfileItem-1,
+.myProfileItem-2 {
+  width: 900px;
+  background-color: white;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.45);
+}
+.profileAnimeImageSize {
+  height: 200px;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mycol {
+  flex-direction: column;
+  margin: 5px;
+}
+.myrow {
+  display: flex;
+  flex-direction: row;
+}
+.profileInputContainer {
+  margin: 20px;
+}
+.profile-input-label {
+  display: block;
+}
+.m5 {
+  margin: 5px;
+}
+.myProfileItem-1 {
+  margin-bottom: 30px;
+}
+.categoryStyle {
+  width: 850px;
+  text-align: left;
+  color: #7302ea;
+}
+.helloText {
+  color: #7302ea;
+  font-weight: bold;
+}

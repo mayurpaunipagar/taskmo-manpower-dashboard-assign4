@@ -1,0 +1,69 @@
+.loginBtn {
+    background-image: linear-gradient(to right, #7302ea, #e426fd);
+    border-radius: 10px;
+    width: 300px;
+    outline: none;
+    border: none;
+    padding: 12px 47px;
+    color: white;
+    font-weight: bold;
+  }
+  .loginBtn:focus {
+    outline: none;
+  }
+  .loginBtn:hover {
+    cursor: pointer;
+  }
+  
+  .icon {
+    padding: 10px;
+    width: auto;
+    height: 40px;
+    min-width: 20px;
+    text-align: center;
+    border-radius: 10px;
+  }
+  
+  .input-container {
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 2px solid #e5e5e5;
+  }
+  
+  .input-field {
+    width: 30vw;
+    padding: 20px;
+    outline: none;
+    border-radius: 10px;
+  
+    border: none;
+  }
+  
+  .myLogin {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+  }
+  
+  .inputForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .loginImage {
+    height: auto;
+    width: 500px;
+    margin-right: 20px;
+  }
+  
+  .welcomeText {
+    margin-bottom: 20px;
+    color: #e426fd;
+    font-weight: bold;
+  }
+  
