@@ -27,6 +27,7 @@ export default function MyTransaction(){
                         <div className="totalTasker">{totalTaskerInvolved}</div>
                         <div className="grayText">Total Tasker involved</div>
                     </div>
+                    <
                 </div>
             </>
         })}
