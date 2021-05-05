@@ -25,6 +25,7 @@ export default function MyTransaction(){
                 <div className="tText">Total Commision</div>
             </div>
         </div>
+        <div className="text2Style">Transaction</div>
         <div className="transaction center mycolReverse">
         {transactions.map(({monthYear,totalTaskerEarning,commissionEarned,totalTaskerInvolved,approved,reedem},index)=>{
             return <>

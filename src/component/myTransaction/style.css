@@ -78,3 +78,10 @@
     margin-bottom: 30px;
     width: 75vw;
 }
+.text2Style{
+    font-size: x-large;
+    color: #A586F7;
+    width: 75vw;
+    margin: 30px 0px 10px;
+    font-weight: lighter;
+}
