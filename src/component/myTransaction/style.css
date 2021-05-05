@@ -12,6 +12,8 @@
     padding:10px;
     border-radius:10px;
     background-color: white;
+    display:flex;
+    justify-content: space-between;
 }
 .monthYearStyle{
     font-size:20px;
@@ -31,4 +33,9 @@
 }
 .grayText{
     color:gray;
+    font-size:10px;
+}
+.tripleDot{
+    height:30px;
+    width: auto;
 }

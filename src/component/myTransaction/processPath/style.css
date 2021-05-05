@@ -1,0 +1,23 @@
+.processPath-container{
+    margin-left:30px;
+}
+.greenLine, .line{
+    margin:5px;
+    width:100px;
+    height: 3px;
+    background-color: gray;
+}
+.greenLine{
+    background-color: #1cb965;
+}
+.iconStyle{
+    margin:5px;
+}
+.purpleblueText{
+    color: #7302ea;
+    font-size: 10px;
+}
+.processPathTextMargin{
+    margin-left:0px;
+    margin-right:0px;
+}
