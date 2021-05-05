@@ -11,6 +11,7 @@ export default function MyTransaction(){
     const commisionearn=2140;
     return <>
     <div className="transaction-container center">
+        <div className="text1Style">Transaction Detail</div>
         <div className="transaction-detail">
                 <DoughnutChart/>
             <div className="tasker-earning center mycol">
@@ -25,7 +26,7 @@ export default function MyTransaction(){
             </div>
         </div>
         <div className="transaction center mycolReverse">
-        {transactions.map(({monthYear,totalTaskerEarning,commissionEarned,totalTaskerInvolved,approved,redeem},index)=>{
+        {transactions.map(({monthYear,totalTaskerEarning,commissionEarned,totalTaskerInvolved,approved,reedem},index)=>{
             return <>
                 <div className="transaction-card center myrow">
                     <div className="center monthYearStyle">{monthYear}</div>
@@ -42,7 +43,7 @@ export default function MyTransaction(){
                         <div className="grayText">Total Tasker involved</div>
                     </div>
 
-                    <div><ProcessPath/></div>
+                    <div><ProcessPath approved={approved} redeem={reedem}/></div>
                     <img className="tripleDot" src={tripledotIcon} alt="tripledot icon"/>
                 </div>
             </>

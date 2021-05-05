@@ -1,7 +1,6 @@
 .transaction-container{
     display:flex;
     flex-direction: column;
-  height: 100vh;
   background-color: #f7f8fc;
   flex-grow: 1;
 }
@@ -70,4 +69,12 @@
 .tText{
     color: white;
     font-size: large;
+}
+.text1Style{
+    color: #A586F7;
+    font-weight: bold;
+    font-size: xx-large;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    width: 75vw;
 }

@@ -1,10 +1,10 @@
-import React, { Component } from "react";
+import React from "react";
 import { Doughnut } from "react-chartjs-2";
 
-class DoughnutChart extends Component {
+class DoughnutChart extends React.Component {
   render() {
-    let data = [9, 5, 3, 2];
-    let labels = ["Newly Added", "Edited", "Deleted", "test4"];
+    let data = [32000, 62000, 30000];
+    let labels = ["Released", "Total", "Available", "test4"];
 
     let customLabels = labels.map((label, index) => `${label}: ${data[index]}`);
 
@@ -14,18 +14,16 @@ class DoughnutChart extends Component {
         {
           label: "Markets Monitored",
           backgroundColor: [
-            "#83ce83",
-            "#959595",
-            "#f96a5d",
-            "#00A6B4",
-            "#6800B4"
+            "#F96D7F",
+            "#A586F7",
+            "#FCB059"
           ],
           data: data
         }
       ]
     };
     return (
-      <div className="chartContainer">
+      <div style={{backgroundColor:"white",padding:"20px 100px",borderRadius:"20px"}}>
         <Doughnut
         data={chartdata}
         options={{
