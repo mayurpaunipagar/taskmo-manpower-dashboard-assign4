@@ -1,6 +1,7 @@
 .transaction-container{
   height: 100vh;
   background-color: #f7f8fc;
+  flex-grow: 1;
 }
 .mycolReverse{
     flex-direction: column-reverse;

@@ -6,7 +6,7 @@ import tripledotIcon from "./../../icons/tripledot.png";
 export default function MyTransaction(){
     
     return <>
-    <div className="transaction-container center mycol">
+    <div className="transaction-container center ">
         <div className="transaction-detail center myrow">
             <div className="chart"></div>
             <div className="tasker-earning"></div>

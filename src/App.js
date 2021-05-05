@@ -22,8 +22,8 @@ export default function App() {
           <NavigationComp setNavList={setNavList} navList={navList} />
           <div className="my-main-content">
             {navList.MyNewProfile ? <MyNewProfile /> : null}
-            {navList.MyReport ? <><br/><h1>I am MyReport</h1></> : null}
-            {navList.MyTransaction ? <><br/><MyTransaction/></> : null}
+            {navList.MyReport ? <><h1>I am MyReport</h1></> : null}
+            {navList.MyTransaction ? <><MyTransaction/></> : null}
             {navList.MyProfile ? <MyProfile /> : null}
           </div>
         </>
