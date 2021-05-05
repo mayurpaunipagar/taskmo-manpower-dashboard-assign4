@@ -28,7 +28,7 @@ class DoughnutChart extends Component {
       <Doughnut
         data={chartdata}
         options={{
-          legend: { display: true, position: "right" },
+          legend: { display: true, position: "left" },
 
           datalabels: {
             display: true,

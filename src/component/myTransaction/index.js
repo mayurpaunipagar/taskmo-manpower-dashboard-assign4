@@ -2,13 +2,16 @@ import "./style.css";
 import transactions from "./../../dataset";
 import ProcessPath from "./processPath";
 import tripledotIcon from "./../../icons/tripledot.png";
+import DoughnutChart from "./doughnutChart";
 
 export default function MyTransaction(){
     
     return <>
-    <div className="transaction-container center ">
+    <div className="transaction-container center">
         <div className="transaction-detail center myrow">
-            <div className="chart"></div>
+            <div className="chart">
+                <DoughnutChart/>
+            </div>
             <div className="tasker-earning"></div>
             <div className="commission-earned"></div>
         </div>
@@ -30,10 +33,8 @@ export default function MyTransaction(){
                         <div className="grayText">Total Tasker involved</div>
                     </div>
 
-                    <div><ProcessPath approved={approved} redeem={redeem}/></div>
-                    <div>
+                    <div><ProcessPath/></div>
                     <img className="tripleDot" src={tripledotIcon} alt="tripledot icon"/>
-                    </div>
                 </div>
             </>
         })}
