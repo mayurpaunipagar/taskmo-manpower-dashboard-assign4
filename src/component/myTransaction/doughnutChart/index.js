@@ -3,8 +3,8 @@ import { Doughnut } from "react-chartjs-2";
 
 class DoughnutChart extends Component {
   render() {
-    let data = [9, 5, 3];
-    let labels = ["Newly Added", "Edited", "Deleted"];
+    let data = [9, 5, 3, 2];
+    let labels = ["Newly Added", "Edited", "Deleted", "test4"];
 
     let customLabels = labels.map((label, index) => `${label}: ${data[index]}`);
 
@@ -25,10 +25,11 @@ class DoughnutChart extends Component {
       ]
     };
     return (
-      <Doughnut
+      <div className="chartContainer">
+        <Doughnut
         data={chartdata}
         options={{
-          legend: { display: true, position: "left" },
+          legend: { display: true, position: "right" },
 
           datalabels: {
             display: true,
@@ -39,6 +40,8 @@ class DoughnutChart extends Component {
           }
         }}
       />
+      </div>
+      
     );
   }
 }

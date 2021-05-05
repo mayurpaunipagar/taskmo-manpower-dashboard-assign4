@@ -42,3 +42,32 @@
     height:30px;
     width: auto;
 }
+.transaction-detail{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+    width:75vw;
+}
+.tasker-earning{
+    background-color:#A586F7;
+    border-radius: 20px;
+    padding:50px;
+    width:20vw;
+}
+.commission-earned{
+    background-color: #F8697D;
+    border-radius: 20px;
+    padding:50px;
+    width:20vw;
+}
+.tte{
+    margin:10px;
+    color:white;
+    font-size:30px;
+    font-weight:bold;
+}
+.tText{
+    color: white;
+    font-size: large;
+}
