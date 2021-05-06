@@ -9,7 +9,7 @@
 }
 .myProfileItem-1,
 .myProfileItem-2 {
-  width: 70vw;
+  width: 73vw;
   background-color: white;
   padding: 10px;
   margin: 10px;
@@ -17,7 +17,8 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.45);
 }
 .profileAnimeImageSize {
-  height: 200px;
+  margin: 40px 10px 10px 37px;
+    height: 200px;
 }
 .center {
   display: flex;
