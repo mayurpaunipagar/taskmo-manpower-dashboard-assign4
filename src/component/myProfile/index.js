@@ -72,7 +72,7 @@ export default function MyProfile() {
           </div>
         </div>
         <div className="categoryStyle">Company</div>
-        <div className="myProfileItem-2 center myrow">
+        <div className="myProfileItem-2 ">
           <div className="mycol">
             <div className="m5">
               <label className="profile-input-label">TDS</label>
@@ -92,10 +92,8 @@ export default function MyProfile() {
             </div>
             <div className="m5">
               <label className="profile-input-label">Brand Logo</label>
-              <input
-                className="profile-input-field"
-                type="text"
-                placeholder="Eg. your text here"
+              <div
+                className="BrandLogoBtnContainer"
               />
             </div>
             <div className="m5">
@@ -132,6 +130,9 @@ export default function MyProfile() {
                 type="text"
                 placeholder="Eg. your text here"
               />
+            </div>
+            <div className="brandImageContainer" style={{border:"1px solid red",height:"136px"}}>
+              
             </div>
             <div className="m5">
               <label className="profile-input-label">

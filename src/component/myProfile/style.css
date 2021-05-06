@@ -46,14 +46,30 @@
   margin-bottom: 30px;
 }
 .categoryStyle {
-  width: 850px;
-  text-align: left;
-  color: #B07DFF;
-  font-size: x-large;
-  font-weight: bold;
+  width: 68vw;
+    text-align: left;
+    color: #B07DFF;
+    font-size: x-large;
+    font-weight: bold;
+    margin-top: 20px;
 }
 .helloText {
   color: #7302ea;
   font-weight: bold;
   margin: 24px;
+}
+.BrandLogoBtnContainer{
+  height: 100px;
+  width: 26vw;
+  outline: none;
+  padding: 5px;
+  font-size: 10px;
+  border: 2px solid #e5e5e5;
+  border-radius: 5px;
+  background-color: #f7f8fc;
+  margin-bottom: 3px;
+}
+.myProfileItem-2{
+  display:flex;
+  justify-content: space-around;
 }
