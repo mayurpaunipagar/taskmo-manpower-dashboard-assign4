@@ -1,5 +1,6 @@
 import "./style.css";
 import profileIcon from "./../../icons/profile1.png";
+import brandLogo from "./../../icons/brand-logo.png";
 
 export default function MyProfile() {
   return (
@@ -94,7 +95,10 @@ export default function MyProfile() {
               <label className="profile-input-label">Brand Logo</label>
               <div
                 className="BrandLogoBtnContainer"
-              />
+              >
+               <button className="brandChooseBtnStyle">Choose File</button>
+               <div>No File Chosen</div>
+              </div>
             </div>
             <div className="m5">
               <label className="profile-input-label">Website</label>
@@ -131,8 +135,10 @@ export default function MyProfile() {
                 placeholder="Eg. your text here"
               />
             </div>
-            <div className="brandImageContainer" style={{border:"1px solid red",height:"136px"}}>
-              
+            <div className="brandImageContainer">
+            <div className="brandBorder">
+                  <img className="brandLogoImg" src={brandLogo} alt="brand-logo"/>
+                </div>
             </div>
             <div className="m5">
               <label className="profile-input-label">
