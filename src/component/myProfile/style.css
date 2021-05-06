@@ -9,7 +9,7 @@
 }
 .myProfileItem-1,
 .myProfileItem-2 {
-  width: 900px;
+  width: 70vw;
   background-color: white;
   padding: 10px;
   margin: 10px;
@@ -47,9 +47,12 @@
 .categoryStyle {
   width: 850px;
   text-align: left;
-  color: #7302ea;
+  color: #B07DFF;
+  font-size: x-large;
+  font-weight: bold;
 }
 .helloText {
   color: #7302ea;
   font-weight: bold;
+  margin: 24px;
 }
