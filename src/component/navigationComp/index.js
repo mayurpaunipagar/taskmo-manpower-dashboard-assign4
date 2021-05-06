@@ -3,7 +3,7 @@ import userImage from "./../../icons/user-image.png";
 import profileIcon from "./../../icons/profile.png";
 import reportIcon from "./../../icons/list.png";
 import transactionIcon from "./../../icons/transaction-1.png";
-import userIcon from "./../../icons/profile.png";
+import userIcon from "./../../icons/profileSmallIcon.png";
 
 export default function NavigationComp({ setNavList, navList }) {
   const userName = "Abhijit M";
