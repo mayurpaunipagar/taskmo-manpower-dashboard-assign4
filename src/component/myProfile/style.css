@@ -17,7 +17,6 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.45);
 }
 .profileAnimeImageSize {
-  margin: 40px 10px 10px 37px;
     height: 200px;
 }
 .center {
@@ -44,6 +43,8 @@
 }
 .myProfileItem-1 {
   margin-bottom: 30px;
+  display:flex;
+  justify-content: space-around;
 }
 .categoryStyle {
   width: 68vw;
@@ -57,6 +58,7 @@
   color: #7302ea;
   font-weight: bold;
   margin: 24px;
+  font-size: x-large;
 }
 .BrandLogoBtnContainer{
   height: 100px;
@@ -72,4 +74,15 @@
 .myProfileItem-2{
   display:flex;
   justify-content: space-around;
+}
+.p1-iField{
+  height: 40px;
+  width: 20vw;
+  outline: none;
+  padding: 5px;
+  font-size: 10px;
+  border: 2px solid #e5e5e5;
+  border-radius: 5px;
+  background-color: #f7f8fc;
+  margin-bottom: 3px;
 }

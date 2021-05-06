@@ -7,7 +7,7 @@ export default function MyProfile() {
       <div className="my-profile-container">
         <br/>
         <div className="categoryStyle">Personal</div>
-        <div className="myProfileItem-1 center">
+        <div className="myProfileItem-1">
           <div className="center mycol">
             <img
               className="profileAnimeImageSize"
@@ -21,7 +21,7 @@ export default function MyProfile() {
               <div>
                 <label className="profile-input-label">Name</label>
                 <input
-                  className="profile-input-field"
+                  className="p1-iField"
                   type="text"
                   placeholder="Eg. your text here"
                 />
@@ -29,7 +29,7 @@ export default function MyProfile() {
               <div>
                 <label className="profile-input-label">Contact</label>
                 <input
-                  className="profile-input-field"
+                  className="p1-iField"
                   type="text"
                   placeholder="Eg. your text here"
                 />
@@ -37,7 +37,7 @@ export default function MyProfile() {
               <div>
                 <label className="profile-input-label">Department</label>
                 <input
-                  className="profile-input-field"
+                  className="p1-iField"
                   type="text"
                   placeholder="Eg. your text here"
                 />
@@ -47,7 +47,7 @@ export default function MyProfile() {
               <div>
                 <label className="profile-input-label">Designation</label>
                 <input
-                  className="profile-input-field"
+                  className="p1-iField"
                   type="text"
                   placeholder="Eg. your text here"
                 />
@@ -55,7 +55,7 @@ export default function MyProfile() {
               <div>
                 <label className="profile-input-label">Email</label>
                 <input
-                  className="profile-input-field"
+                  className="p1-iField"
                   type="text"
                   placeholder="Eg. your text here"
                 />
@@ -63,7 +63,7 @@ export default function MyProfile() {
               <div>
                 <label className="profile-input-label">State</label>
                 <input
-                  className="profile-input-field"
+                  className="p1-iField"
                   type="text"
                   placeholder="Eg. your text here"
                 />
