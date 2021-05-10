@@ -8,6 +8,7 @@ import "./App.css";
 import MyTransaction from "./component/myTransaction";
 import { BrowserRouter,Route, Switch, Redirect } from "react-router-dom";
 import MyHome from "./component/myHome";
+import MyReport from "./component/myReport";
 
 export default function App() {
   const [loggedIn, setLoggedIn] = useState(false);
@@ -30,6 +31,7 @@ export default function App() {
                 </Route>
                 <Route path="/home" component={MyHome} />
                 <Route path="/new-profile" component={MyNewProfile}/>
+                <Route path="/report" component={MyReport}/>
                 <Route path="/transactions" component={MyTransaction}/>
                 <Route path="/profile" component={MyProfile}/>
                 {/* <Route path="/report" component={Body2} exact={true} /> */}

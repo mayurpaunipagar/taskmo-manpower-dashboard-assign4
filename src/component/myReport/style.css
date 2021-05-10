@@ -1,0 +1,111 @@
+.body {
+    padding: 26px 27px;
+    flex: 0.8;
+    min-height: 1024px;
+    overflow-y: overlay;
+    background: #f7f8fc 0% 0% no-repeat padding-box;
+    opacity: 1;
+    max-width: 1440px;
+    text-align: left;
+    font: normal normal normal 12px/16px Mulish;
+    letter-spacing: 0px;
+    font-size: 16px;
+    text-decoration: none;
+  }
+  .header1 {
+    display: flex;
+    justify-content: space-between;
+  }
+  .header1 > p {
+    text-align: center;
+    font: normal normal 600 28px/35px Mulish;
+    letter-spacing: 0px;
+    color: #8628e2;
+    text-transform: capitalize;
+    opacity: 1;
+  }
+  
+  .header1 > img {
+    margin-top: 20px;
+  }
+  
+  .graph {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .card_body12 {
+    flex: 0.2;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border-radius: 8px;
+    opacity: 1;
+    display: flex;
+    justify-content: space-between;
+    min-width: 330px;
+    min-height: 250px;
+  }
+  
+  .card_body22 {
+    flex: 0.7;
+    object-fit: contain;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border-radius: 8px;
+    opacity: 1;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    width: 633px;
+    min-height: 250px;
+  }
+  
+  .card_body3 {
+    flex: 0.7;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border-radius: 8px;
+    opacity: 1;
+    display: flex;
+    justify-content: space-between;
+    height: 114px;
+    padding: 30px;
+    align-items: center;
+    box-shadow: 0px 0px 10px #0000001a;
+    text-decoration: none;
+  }
+  
+  .col-md-3 {
+    padding: 20px;
+  }
+  
+  .p1 {
+    color: #f77aef;
+  }
+  .p12 {
+    color: #13ad4c;
+  }
+  
+  .p13 {
+    color: #673695;
+  }
+  .p2 {
+    color: #929292;
+    font-size: 12px;
+  }
+  
+  .table {
+    font-size: 22px;
+    text-decoration: none;
+  }
+  
+  .container {
+    width: 250px;
+    height: 250px;
+  }
+  
+  .table > a {
+    text-decoration: none;
+  }
+  .apexcharts-legend {
+    margin-right: 25px;
+    line-height: 3rem;
+  }
+  

@@ -13,7 +13,7 @@ function MyHome() {
   };
 
   return (
-    <div className="mybody">
+    <div className="body">
       <div className="card_body">
         <div className="inner_card">
           <h1>123</h1>
