@@ -37,7 +37,7 @@ export default function NavigationComp({ setNavList, navList }) {
           <span>
             <img className="nav-icon" src={profileIcon} alt="profile icon" />
           </span>
-          <span className="nav-text">Profile</span>
+          <span className="nav-text">Home</span>
         </div>
         <div
           className={`nav-item ${navList.MyReport ? "nav-highlight" : null}`}
