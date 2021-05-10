@@ -1,5 +1,4 @@
 import "./style.css";
-import addProfileIcon from "./../../icons/add-profile.png";
 
 export default function MyNewProfile() {
   const formData = [
@@ -22,7 +21,7 @@ export default function MyNewProfile() {
               <div className="new-profile-text">Add New Profile </div>
               <img
                 className="my-new-profile-img"
-                src={addProfileIcon}
+                src={window.location.origin +"/images/add-employe-image.svg"}
                 alt="profile icon"
               />
             </div>

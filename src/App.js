@@ -9,6 +9,7 @@ import MyTransaction from "./component/myTransaction";
 import { BrowserRouter,Route, Switch, Redirect } from "react-router-dom";
 import MyHome from "./component/myHome";
 import MyReport from "./component/myReport";
+import MyReportDetails from "./component/navigationComp/myReportDetails";
 
 export default function App() {
   const [loggedIn, setLoggedIn] = useState(false);
@@ -31,24 +32,11 @@ export default function App() {
                 </Route>
                 <Route path="/home" component={MyHome} />
                 <Route path="/new-profile" component={MyNewProfile}/>
-                <Route path="/report" component={MyReport}/>
+                <Route path="/report" component={MyReport} exact={true}/>
                 <Route path="/transactions" component={MyTransaction}/>
                 <Route path="/profile" component={MyProfile}/>
-                {/* <Route path="/report" component={Body2} exact={true} /> */}
-                {/* <Route path="/report/1" component={Body3} /> */}
+                <Route path="/report/1" component={MyReportDetails} />
               </Switch>
-              {/* {navList.MyNewProfile ? <MyNewProfile /> : null} */}
-              {/* {navList.MyReport ? (
-                <>
-                  <div>I am MyReport</div>
-                </>
-              ) : null} */}
-              {/* {navList.MyTransaction ? (
-                <>
-                  <MyTransaction />
-                </>
-              ) : null} */}
-              {/* {navList.MyProfile ? <MyProfile /> : null} */}
             </div>
           </>
         ) : (

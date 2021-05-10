@@ -32,14 +32,16 @@
   }
   
   .inner_card {
-    height: 200px;
-    width: 200px;
-    background-color: rgb(23, 192, 178);
+    height: 250px;
+    width: 250px;
     border-radius: 15px;
     text-align: center;
-    font: normal normal bold 20px/25px Mulish;
     letter-spacing: 0px;
     color: #ffffff;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
   }
   
   .inner_card > hr {
@@ -148,3 +150,7 @@
       cursor: pointer;
   }
   
+  .homeCardCount{
+    font-weight: bold; 
+    font-size: xxx-large;
+  }

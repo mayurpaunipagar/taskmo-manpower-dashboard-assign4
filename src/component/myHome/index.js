@@ -1,6 +1,7 @@
 import "./style.css";
 import React from "react";
 import { Link } from "react-router-dom";
+import { homeCardArr } from "../../dataset";
 
 function MyHome() {
   const handleClick = (id) => {
@@ -15,26 +16,24 @@ function MyHome() {
   return (
     <div className="body">
       <div className="card_body">
-        <div className="inner_card">
-          <h1>123</h1>
-          <hr />
-          <h4>body</h4>
-        </div>
-        <div className="inner_card">
-          <h1>123</h1>
-          <hr />
-          <h4>body</h4>
-        </div>
-        <div className="inner_card">
-          <h1>123</h1>
-          <hr />
-          <h4>body</h4>
-        </div>
-        <div className="inner_card">
-          <h1>123</h1>
-          <hr />
-          <h4>body</h4>
-        </div>
+        {homeCardArr.map((obj, idx) => {
+          return (
+            <>
+              <div
+                key={idx}
+                className="inner_card"
+                style={{
+                  backgroundImage: `url("${window.location.origin}/images/${obj.imageName}")`,
+                  backgroundRepeat:"no-repeat",
+                  backgroundSize:"cover"
+                }}
+              >
+                <div className="homeCardCount">{obj.count}</div>
+                <div>{obj.name }</div>
+              </div>
+            </>
+          );
+        })}
       </div>
       <div className="header_table">
         <div className="header_left">

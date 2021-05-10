@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="301" height="301" viewBox="0 0 301 301">
+  <defs>
+    <filter id="Rectangle_72" x="0" y="0" width="301" height="301" filterUnits="userSpaceOnUse">
+      <feOffset dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur"/>
+      <feFlood flood-opacity="0.2"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_71" x="0" y="0" width="301" height="301" filterUnits="userSpaceOnUse">
+      <feOffset dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur-2"/>
+      <feFlood flood-opacity="0.2"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-path">
+      <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Rectangle_72)">
+        <rect id="Rectangle_72-2" data-name="Rectangle 72" width="295" height="295" rx="28" transform="translate(791 120)" fill="#f8697d"/>
+      </g>
+    </clipPath>
+  </defs>
+  <g id="transaction1" transform="translate(-788 -119)">
+    <g id="Group_178" data-name="Group 178">
+      <g transform="matrix(1, 0, 0, 1, 788, 119)" filter="url(#Rectangle_71)">
+        <rect id="Rectangle_71-2" data-name="Rectangle 71" width="295" height="295" rx="28" transform="translate(3 1)" fill="#a586f7"/>
+      </g>
+      <g id="Mask_Group" data-name="Mask Group">
+        <g id="Rectangle_72-3" data-name="Rectangle 72" clip-path="url(#clip-path)">
+          <ellipse id="Ellipse_23" data-name="Ellipse 23" cx="103.305" cy="93.5" rx="103.305" ry="93.5" transform="translate(715.869 100)" fill="rgba(91,70,192,0.3)" style="mix-blend-mode: overlay;isolation: isolate"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

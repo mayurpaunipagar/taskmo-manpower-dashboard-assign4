@@ -33,4 +33,24 @@ const transactions=[
     }
 ]
 
+const homeCardArr=[
+    {
+        name:"Total Profile",
+        count:54792,
+        imageName:"home1.svg"
+    },{
+        name:"Active Profile",
+        count:32463,
+        imageName:"home2.svg"
+    },{
+        name:"Profile Registered",
+        count:54792,
+        imageName:"home3.svg"
+    },{
+        name:"Profile Onboarded",
+        count:54792,
+        imageName:"home4.svg"
+    }
+]
+export {homeCardArr};
 export default transactions;
