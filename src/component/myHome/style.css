@@ -13,6 +13,8 @@
 }
 
 .card_body {
+  
+  border: 2px solid #E4E5EE;
     background: #ffffff 0% 0% no-repeat padding-box;
     border-radius: 8px;
     display: flex;
@@ -28,7 +30,9 @@
     height: 93px;
     box-shadow: 0px 0px 10px #0000001a;
     opacity: 1;
+    justify-content: space-around;
     align-items: center;
+    margin-bottom: 20px;
   }
   
   .inner_card {
@@ -39,9 +43,10 @@
     letter-spacing: 0px;
     color: #ffffff;
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: center;
+    align-items: baseline;
     flex-direction: column;
+    padding: 0px 0px 0px 37px;
   }
   
   .inner_card > hr {
@@ -54,12 +59,11 @@
   }
   
   .header_left {
-    flex: 0.3;
-    text-align: center;
-    font: normal normal normal 20px/25px Mulish;
-    letter-spacing: 0px;
-    color: #8628e2;
-    text-transform: capitalize;
+    flex: 0.15 1;
+    margin-top: 30px;
+    color: #673695;
+    display: flex;
+    font-size: xx-large;
   }
   
   .header_right1 {
@@ -96,7 +100,6 @@
   .ro {
     display: flex;
     justify-content: center;
-    word-spacing: 0.1rem;
   }
   
   .button_row {
@@ -128,15 +131,27 @@
   }
   
   .support {
-    width: 80px;
-    height: 80px;
-    float: right;
+    display: flex;
+    justify-content: flex-end;
   }
-  
   .loadmore {
-    margin-left: 35%;
-    justify-content: center;
-    text-align-last: center;
+    text-align: center;
+  }
+  .loadmoreBtn{
+    background-color: #2196F3;
+    border-radius: 10px;
+    border:none;
+    outline:none;
+    padding:15px 30px;
+    color: white;
+    font-weight: bold;
+  }
+  .loadmoreBtn:hover{
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.45);;
+  }
+  .loadmoreBtn:focus{
+    outline:none;
   }
   
   .col-2 {
@@ -153,4 +168,61 @@
   .homeCardCount{
     font-weight: bold; 
     font-size: xxx-large;
+  }
+
+  .homeCardName{
+    font-size:larger;
+  }
+  .main_table{
+    margin:16px 0px;
+  }
+
+  .myCol{
+    display:flex;
+    flex-direction: column;
+
+  }
+
+  .myProfileName{
+    margin: 0px 0px 10px 0px;
+    font-weight: bold;
+    font-size: larger;
+  }
+
+  .myAdded,.myOnboarded,.myRegistered{
+    height: 50px;
+    border-radius: 30px;
+    width: 8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .myAdded{
+    background-color: #FFD699;
+  }
+  .myOnboarded{
+    background-color: #D0F1EB;
+  }
+  .myRegistered{
+    background-color: #F9E1E5;
+  }
+  .myJobRole{
+    color:gray;
+    font-size: small;
+  }
+  .myJobRoleValue{
+    color:black;
+    font-weight: bold;
+  }
+  .homeCityStyle{
+    color:darkgray;
+  }
+  .homePinStyle{
+    color:darkgray;
+    font-size: smaller;
+  }
+  .myStateStyle{
+    font-weight: bold;
+    margin-bottom: 10px;
   }

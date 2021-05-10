@@ -1,7 +1,7 @@
 import "./style.css";
 import React from "react";
 import { Link } from "react-router-dom";
-import { homeCardArr } from "../../dataset";
+import { homeCardArr, homeAllProfiles } from "../../dataset";
 
 function MyHome() {
   const handleClick = (id) => {
@@ -24,21 +24,20 @@ function MyHome() {
                 className="inner_card"
                 style={{
                   backgroundImage: `url("${window.location.origin}/images/${obj.imageName}")`,
-                  backgroundRepeat:"no-repeat",
-                  backgroundSize:"cover"
+                  backgroundRepeat: "no-repeat",
+                  backgroundSize: "cover",
                 }}
               >
                 <div className="homeCardCount">{obj.count}</div>
-                <div>{obj.name }</div>
+                <hr />
+                <div className="homeCardName">{obj.name}</div>
               </div>
             </>
           );
         })}
       </div>
       <div className="header_table">
-        <div className="header_left">
-          <h1>All Profiles</h1>
-        </div>
+        <div className="header_left">All Profiles</div>
 
         <div className="header_right1">
           <div
@@ -74,56 +73,74 @@ function MyHome() {
         </div>
       </div>
       <div className="main_table">
-        <div className="card_body1">
-          <div className="name col-2">
-            <p>Name</p>
-            <div className="ro">
-              <p style={{ color: " #9FA2B4", fontSize: "12px" }}>job role:</p>
-              &nbsp;
-              <p className="role" style={{ fontSize: "12px" }}>
-                name
-              </p>
-            </div>
-          </div>
-          <div className="col-2">
-            <h3 style={{ color: "#838383", textTransform: "capitalize" }}>
-              hydrabad
-            </h3>
-          </div>
-          <div className="col-2">
-            <h3 style={{ color: " #525252" }}>state</h3>
-            <p style={{ color: " #B3B3B3", fontSize: "12px" }}>pincode</p>
-          </div>
-          <div className="col-2">
-            <div className="ro" style={{ color: " #494646" }}>
-              <p>data</p>&nbsp;
-              <p>time</p>
-            </div>
-          </div>
-          <div className="col-2" style={{ marginTop: "20px" }}>
-            <input type="submit" value="Fetch" className="button_option" />
-          </div>
-          <div className="col-2">
-            <img src={window.location.origin + "/images/call.png"} alt="call" />
-            <img
-              src={window.location.origin + "/images/message.png"}
-              alt="message"
-            />
-          </div>
-        </div>
+        {homeAllProfiles.map(
+          (
+            {
+              name,
+              jobRole,
+              city,
+              state,
+              pincode,
+              date,
+              month,
+              year,
+              time,
+              status,
+            },
+            idx
+          ) => {
+            return (
+              <>
+                <div key={idx} className="card_body1">
+                  <div className="myCol">
+                    <div className="myProfileName">{name}</div>
+                    <div className="myJobRole">
+                      Job Role : <span className={"myJobRoleValue"}>{jobRole}</span>
+                    </div>
+                  </div>
+
+                  <div className="myCol">
+                    <div className="homeCityStyle">{city}</div>
+                  </div>
+
+                  <div className="myCol">
+                    <div className="myStateStyle">{state}</div>
+                    <div className="homePinStyle">{pincode}</div>
+                  </div>
+
+                  <div className="myCol">
+                    <div>{`${date} ${month} ${year} ${time}`}</div>
+                  </div>
+                  
+                  <div className={`my${status}`} >{status}</div>
+
+                  <div>
+                    <img
+                      src={window.location.origin + "/images/call.svg"}
+                      alt="call"
+                    />
+                    <img
+                      src={window.location.origin + "/images/message.svg"}
+                      alt="message"
+                    />
+                  </div>
+                </div>
+              </>
+            );
+          }
+        )}
       </div>
-      <div>
-        <img
-          src={window.location.origin + "/images/load more.png"}
-          alt="loadmore"
-          className="loadmore"
-        />
-        <img
-          src={window.location.origin + "/images/support.png"}
+      <div className="support">
+        <img 
+          src={window.location.origin + "/images/support.svg"}
           alt="support"
-          className="support"
+          
         />
       </div>
+      <div className="loadmore">
+        <button className="loadmoreBtn">LOAD MORE</button>
+        </div>
+        
     </div>
   );
 }

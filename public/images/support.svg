@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="95" height="95" viewBox="0 0 95 95">
+  <defs>
+    <filter id="Ellipse_29" x="0" y="0" width="95" height="95" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="7.5" result="blur"/>
+      <feFlood flood-opacity="0.259"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="support" transform="translate(-1273.5 -896.5)">
+    <g transform="matrix(1, 0, 0, 1, 1273.5, 896.5)" filter="url(#Ellipse_29)">
+      <g id="Ellipse_29-2" data-name="Ellipse 29" transform="translate(22.5 22.5)" fill="#fff" stroke="#673695" stroke-width="1">
+        <circle cx="25" cy="25" r="25" stroke="none"/>
+        <circle cx="25" cy="25" r="24.5" fill="none"/>
+      </g>
+    </g>
+    <g id="Group_223" data-name="Group 223" transform="translate(1307.765 932.072)">
+      <g id="Group_222" data-name="Group 222" transform="translate(0)">
+        <path id="Vector" d="M25.017,12.052a11.853,11.853,0,1,0-23.7.078A2.569,2.569,0,0,0,0,14.379v2.614a2.632,2.632,0,0,0,2.633,2.614A1.316,1.316,0,0,0,3.95,18.3V12.013a9.427,9.427,0,0,1,8.927-9.529,9.263,9.263,0,0,1,6.7,2.579,9.127,9.127,0,0,1,2.8,6.571v9.281H13.167a1.307,1.307,0,1,0,0,2.614h9.217a2.632,2.632,0,0,0,2.633-2.614V19.32a2.415,2.415,0,0,0,1.317-2.144V14.17a2.4,2.4,0,0,0-1.317-2.118Z" fill="#673695"/>
+        <path id="Vector-2" data-name="Vector" d="M2.633,1.307A1.317,1.317,0,1,1,1.317,0,1.312,1.312,0,0,1,2.633,1.307Z" transform="translate(7.9 11.765)" fill="#daa520"/>
+        <path id="Vector-3" data-name="Vector" d="M2.633,1.307A1.317,1.317,0,1,1,1.317,0,1.312,1.312,0,0,1,2.633,1.307Z" transform="translate(15.8 11.765)" fill="#daa520"/>
+        <path id="Vector-4" data-name="Vector" d="M15.793,6.575a7.882,7.882,0,0,0-2.706-4.709A7.96,7.96,0,0,0,.019,8.431,10.628,10.628,0,0,0,4.193,5.38,10.523,10.523,0,0,0,6.418.732,10.589,10.589,0,0,0,15.793,6.575Z" transform="translate(5.274 3.922)" fill="#673695"/>
+      </g>
+    </g>
+  </g>
+</svg>
