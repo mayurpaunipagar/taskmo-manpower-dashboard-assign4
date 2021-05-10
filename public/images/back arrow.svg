@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="41" height="41" viewBox="0 0 41 41">
+  <defs>
+    <linearGradient id="linear-gradient" y1="0.5" x2="0.947" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fdfdfd"/>
+      <stop offset="1" stop-color="#e2e2e2"/>
+    </linearGradient>
+    <filter id="Ellipse_144" x="0" y="0" width="41" height="41" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="back_arrow" data-name="back arrow" transform="translate(-1356 -254)">
+    <g transform="matrix(1, 0, 0, 1, 1356, 254)" filter="url(#Ellipse_144)">
+      <circle id="Ellipse_144-2" data-name="Ellipse 144" cx="14.5" cy="14.5" r="14.5" transform="translate(6 6)" fill="url(#linear-gradient)"/>
+    </g>
+    <path id="ic_chevron_left_24px" d="M15.41,7.41,14,6,8,12l6,6,1.41-1.41L10.83,12Z" transform="translate(1365 263)"/>
+  </g>
+</svg>
