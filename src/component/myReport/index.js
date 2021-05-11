@@ -170,28 +170,7 @@ function MyReport() {
               );
             }
           )}
-          {/* <div className="card_body3">
-            <p className="col1">name</p>
-            <div className="col2">
-              <p className="p1">1000</p>
-              <p className="p2">Total</p>
-            </div>
-            <div className="col3">
-              <p className="p12">1000</p>
-              <p className="p2">Total</p>
-            </div>
-            <div className="col4">
-              <p className="p13">1000</p>
-              <p className="p2">Total</p>
-            </div>
-            <img
-              src={window.location.origin + "/images/arrow.png"}
-              alt="arrow"
-              className="col-md-2"
-              height="50px"
-              width="50px"
-            />
-          </div> */}
+          
         </Link>
       </div>
     </div>

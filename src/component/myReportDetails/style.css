@@ -95,6 +95,7 @@
   
   .col-21 {
     font-size: 16px;
+    font-weight: bold;
   }
   
   .col-31 {
@@ -112,8 +113,6 @@
   .col-71 {
     color: #673695;
   }
-  
-  .hr {
-    opacity: 0.3;
+  .hrStyle{
+    border-top: 2px solid #c6c6c6;
   }
-  

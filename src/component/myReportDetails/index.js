@@ -1,6 +1,7 @@
 import "./style.css";
 import React from "react";
 import { Link } from "react-router-dom";
+import { MyReportDetailsData } from "./../../dataset";
 
 function MyReportDetails() {
   const handleClick = (id) => {
@@ -24,24 +25,32 @@ function MyReportDetails() {
               width="50px"
             />
           </Link>
-          <p>Back</p>
+          <div>Back</div>
         </div>
         <div className="header_center">
-          <p className="title">onboard merchant</p>
-          <p className="dates">date1 - date2</p>
+          <div className="title">{MyReportDetailsData.name}</div>
+          <div className="dates">
+            {MyReportDetailsData.startDate} - {MyReportDetailsData.endDate}
+          </div>
         </div>
         <div className="header_right">
-          <img src={window.location.origin + "/images/Search.png"} alt="download" />
-          <img src={window.location.origin + "/images/download.png"} alt="download" />
+          <img
+            src={window.location.origin + "/images/Search.png"}
+            alt="download"
+          />
+          <img
+            src={window.location.origin + "/images/download.png"}
+            alt="download"
+          />
           <div
             className="small_card"
             id="list-items"
             style={{ display: "none" }}
           >
-            <p className="drop1">Dates</p>
-            <p className="drop2">FSE ID</p>
-            <p className="drop3">FSE name</p>
-            <p className="drop4">Project name</p>
+            <div className="drop1">Dates</div>
+            <div className="drop2">FSE ID</div>
+            <div className="drop3">FSE name</div>
+            <div className="drop4">Project name</div>
           </div>
           <img
             src={window.location.origin + "/images/filter.svg"}
@@ -52,7 +61,55 @@ function MyReportDetails() {
         </div>
       </div>
       <div className="card_box">
-        <div className="row">
+        {MyReportDetailsData.details.map(
+          (
+            {
+              fseId,
+              fseName,
+              projectName,
+              startDate,
+              endDate,
+              totalTaskerEarnings,
+              totalCommission,
+            },
+            idx
+          ) => {
+            return (
+              <>
+                <div key={idx} className="row1">
+                  <div>{fseId}</div>
+                  <div className="center mycol">
+                    <div className="col-21">{fseName}</div>
+                    <div className="grayText mt-3">FSE Name</div>
+                  </div>
+                  <div className="center mycol">
+                    <div>{projectName}</div>
+                    <div className="grayText mt-3">Project Name</div>
+                  </div>
+                  <div className="center mycol">
+                    <div className="col-41">{startDate}</div>
+                    <div className="grayText mt-3">Start Date</div>
+                  </div>
+                  <div className="center mycol">
+                    <div className="col-51">{endDate}</div>
+                    <div className="grayText mt-3">End Date</div>
+                  </div>
+                  <div className="center mycol">
+                    <div className="col-61">&#8377;{totalTaskerEarnings}</div>
+                    <div className="grayText mt-3">Total Tasker Earnings</div>
+                  </div>
+                  <div className="center mycol">
+                    <div className="col-71">&#8377;{totalCommission}</div>
+                    <div className="grayText mt-3">Total Commission</div>
+                  </div>
+                </div>
+                {MyReportDetailsData.details.length-1===idx?null:<hr className="hrStyle" />}
+              </>
+            );
+          }
+        )}
+
+        {/* <div className="row1">
           <div className="col1">
             <p className="p1">name</p>
           </div>
@@ -80,37 +137,7 @@ function MyReportDetails() {
             <p className="col-71">date</p>
             <p className="col-3">start date</p>
           </div>
-        </div>
-        <hr className="hr" />
-        <div className="row1">
-          <div className="col1">
-            <p className="p1">name</p>
-          </div>
-          <div className="col2">
-            <p className="col-21">abhijith</p>
-            <p className="col-3">fes name</p>
-          </div>
-          <div className="col3">
-            <p className="col-31">date</p>
-            <p className="col-3">start date</p>
-          </div>
-          <div className="col4">
-            <p className="col-41">date</p>
-            <p className="col-3">start date</p>
-          </div>
-          <div className="col5">
-            <p className="col-51">date</p>
-            <p className="col-3">start date</p>
-          </div>
-          <div className="col6">
-            <p className="col-61">date</p>
-            <p className="col-3">start date</p>
-          </div>
-          <div className="col7">
-            <p className="col-71">date</p>
-            <p className="col-3">start date</p>
-          </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

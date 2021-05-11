@@ -133,5 +133,70 @@ const reportDetails=[
     totalCommission:300
   }
 ]
-export { homeCardArr, homeAllProfiles, reportDetails };
+
+const MyReportDetailsData={
+  name:"Onboard Merchant",
+  startDate:"01/02/2021",
+  endDate:"21/03/2021",
+  details:[
+    {
+      fseId:"FSE ID",
+      fseName:"Abhijit Mohanty",
+      projectName:"Jio Mart",
+      startDate:"18/03/2021",
+      endDate:"21/03/2021",
+      totalTaskerEarnings:25000,
+      totalCommission:5000
+    },{
+      fseId:"FSE ID",
+      fseName:"Abhijit Mohanty",
+      projectName:"Amazon Fruit",
+      startDate:"14/03/2021",
+      endDate:"17/03/2021",
+      totalTaskerEarnings:25000,
+      totalCommission:5000
+    },{
+      fseId:"FSE ID",
+      fseName:"Abhijit Mohanty",
+      projectName:"Phonepe",
+      startDate:"05/03/2021",
+      endDate:"13/03/2021",
+      totalTaskerEarnings:25000,
+      totalCommission:5000
+    },{
+      fseId:"FSE ID",
+      fseName:"Abhijit Mohanty",
+      projectName:"Amazon Fruit",
+      startDate:"01/03/2021",
+      endDate:"04/03/2021",
+      totalTaskerEarnings:25000,
+      totalCommission:5000
+    },{
+      fseId:"FSE ID",
+      fseName:"Abhijit Mohanty",
+      projectName:"Phone Pe",
+      startDate:"22/02/2021",
+      endDate:"28/02/2021",
+      totalTaskerEarnings:25000,
+      totalCommission:5000
+    },{
+      fseId:"FSE ID",
+      fseName:"Abhijit Mohanty",
+      projectName:"Jio Mart",
+      startDate:"16/02/2021",
+      endDate:"22/02/2021",
+      totalTaskerEarnings:25000,
+      totalCommission:5000
+    },{
+      fseId:"FSE ID",
+      fseName:"Abhijit Mohanty",
+      projectName:"Jio Mart",
+      startDate:"07/02/2021",
+      endDate:"15/02/2021",
+      totalTaskerEarnings:25000,
+      totalCommission:5000
+    }
+  ]
+}
+export { homeCardArr, homeAllProfiles, reportDetails, MyReportDetailsData };
 export default transactions;
