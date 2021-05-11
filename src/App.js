@@ -9,7 +9,7 @@ import MyTransaction from "./component/myTransaction";
 import { BrowserRouter,Route, Switch, Redirect } from "react-router-dom";
 import MyHome from "./component/myHome";
 import MyReport from "./component/myReport";
-import MyReportDetails from "./component/navigationComp/myReportDetails";
+import MyReportDetails from "./component/myReportDetails";
 
 export default function App() {
   const [loggedIn, setLoggedIn] = useState(false);
