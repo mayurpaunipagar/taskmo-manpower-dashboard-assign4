@@ -44,7 +44,7 @@ function MyReportDetails() {
             <p className="drop4">Project name</p>
           </div>
           <img
-            src={window.location.origin + "/images/filter.png"}
+            src={window.location.origin + "/images/filter.svg"}
             id="list"
             alt="filter"
             onClick={(id) => handleClick(id)}
