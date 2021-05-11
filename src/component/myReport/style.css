@@ -13,6 +13,7 @@
   .header1 {
     display: flex;
     justify-content: space-between;
+    margin-top:30px;
   }
   .header1 > p {
     text-align: center;
@@ -29,18 +30,13 @@
   
   .graph {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
   
   .card_body12 {
-    flex: 0.2;
     background: #ffffff 0% 0% no-repeat padding-box;
     border-radius: 8px;
-    opacity: 1;
-    display: flex;
-    justify-content: space-between;
-    min-width: 330px;
-    min-height: 250px;
+    height: fit-content;
   }
   
   .card_body22 {
@@ -54,6 +50,7 @@
     padding: 20px;
     width: 633px;
     min-height: 250px;
+    border-radius: 20px;
   }
   
   .card_body3 {
@@ -139,4 +136,11 @@
 
   .arrowStyle{
     padding:20px;
+  }
+  .pieStyle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
   }

@@ -95,20 +95,21 @@ function MyReport() {
 
   console.log("Option", option);
   console.log("bar", bar);
+
   return (
     <div className="body">
       <div className="header1">
         <p>Report Overview</p>
         <img
-          src={window.location.origin + "/images/filter.png"}
+          src={window.location.origin + "/images/filter.svg"}
           alt="filter"
           height="50px"
           width="50px"
         />
       </div>
       <div className="graph">
+        <div className="pieStyle">
         <div className="card_body12">
-          <div className="container">
             {option && (
               <Chart
                 options={option.options}
@@ -118,7 +119,7 @@ function MyReport() {
                 width={360}
               />
             )}
-          </div>
+        </div>
         </div>
         <div className="card_body22">
           {bar && (
@@ -152,15 +153,15 @@ function MyReport() {
                   <div className="report-details-card">
                     <div className="rd-name">{name}</div>
                     <div className="rd-mycol">
-                      <div className="totalTasker">{totalTaskerInvolved}</div>
+                      <div className="totalTasker mt-3">{totalTaskerInvolved}</div>
                       <div className="grayText rd-style">Total Tasker Involved</div>
                     </div>
                     <div className="rd-mycol ">
-                      <div className="totalTaskerEarnStyle money">&#8377;{totalTaskerEarnings}</div>
+                      <div className="totalTaskerEarnStyle money mt-3">&#8377;{totalTaskerEarnings}</div>
                       <div className="grayText rd-style">Total Tasker Earnings</div>
                     </div>
                     <div className="rd-mycol">
-                      <div className="rd-t-commission money">&#8377;{totalCommission}</div>
+                      <div className="rd-t-commission money mt-3">&#8377;{totalCommission}</div>
                       <div className="grayText rd-style">Total Commission</div>
                     </div>
                     <img className="arrowStyle" src={window.location.origin+"/images/arrow.svg"} alt="arrow"/>
