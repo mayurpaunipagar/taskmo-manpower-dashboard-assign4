@@ -106,4 +106,37 @@
     margin-right: 25px;
     line-height: 3rem;
   }
-  
+  .report-details-card{
+    box-shadow:  0 2px 2px 0 rgba(0, 0, 0, 0.05), 0 3px 6px 0 rgba(0, 0, 0, 0.15);
+    width:75vw;
+    margin:10px;
+    padding:10px;
+    border-radius:10px;
+    background-color: white;
+    display:flex;
+    justify-content: space-between;
+    font-size: revert;
+    color:black;
+  }
+  .rd-mycol{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .rd-name{
+    padding: 20px 20px;
+    min-width: 250px;
+    font-weight: bold;
+    font-size: revert;
+  }
+  .rd-style{
+    padding:10px;
+  }
+  .rd-t-commission{
+    color: #70429B;
+  }
+
+  .arrowStyle{
+    padding:20px;
+  }

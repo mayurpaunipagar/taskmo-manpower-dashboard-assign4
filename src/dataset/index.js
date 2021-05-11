@@ -106,5 +106,32 @@ const homeAllProfiles = [
     status: "Added", // Added, Onboarded, Registered
   },
 ];
-export { homeCardArr, homeAllProfiles };
+
+const reportDetails=[
+  {
+    name:"Onboard Merchant",
+    totalTaskerInvolved:1000,
+    totalTaskerEarnings:5000,
+    totalCommission:8000
+  },
+  {
+    name:"FSE",
+    totalTaskerInvolved:300,
+    totalTaskerEarnings:3000,
+    totalCommission:5000
+  },
+  {
+    name:"Promoter",
+    totalTaskerInvolved:800,
+    totalTaskerEarnings:8000,
+    totalCommission:4000
+  },
+  {
+    name:"Marketing",
+    totalTaskerInvolved:150,
+    totalTaskerEarnings:8000,
+    totalCommission:300
+  }
+]
+export { homeCardArr, homeAllProfiles, reportDetails };
 export default transactions;

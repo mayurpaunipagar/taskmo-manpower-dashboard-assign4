@@ -28,14 +28,14 @@
     color:#feb36f;
 }
 .totalTasker{
-    color:pink;
+    color:rgb(253, 165, 179);
 }
 .totalTaskerEarnStyle, .commissionEarnStyle, .totalTasker{
     font-size:20px;
 }
 .grayText{
     color:gray;
-    font-size:10px;
+    font-size:13px;
 }
 .tripleDot{
     height:30px;

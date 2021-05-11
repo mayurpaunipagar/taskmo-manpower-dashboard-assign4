@@ -1,4 +1,5 @@
 import "./style.css";
+import { reportDetails } from "./../../dataset";
 import React, { useState, useEffect } from "react";
 import Chart from "react-apexcharts";
 import { Link } from "react-router-dom";
@@ -136,7 +137,39 @@ function MyReport() {
       </div>
       <div className="table">
         <Link to="/report/1">
-          <div className="card_body3">
+          {reportDetails.map(
+            (
+              {
+                name,
+                totalTaskerInvolved,
+                totalTaskerEarnings,
+                totalCommission,
+              },
+              idx
+            ) => {
+              return (
+                <>
+                  <div className="report-details-card">
+                    <div className="rd-name">{name}</div>
+                    <div className="rd-mycol">
+                      <div className="totalTasker">{totalTaskerInvolved}</div>
+                      <div className="grayText rd-style">Total Tasker Involved</div>
+                    </div>
+                    <div className="rd-mycol ">
+                      <div className="totalTaskerEarnStyle money">&#8377;{totalTaskerEarnings}</div>
+                      <div className="grayText rd-style">Total Tasker Earnings</div>
+                    </div>
+                    <div className="rd-mycol">
+                      <div className="rd-t-commission money">&#8377;{totalCommission}</div>
+                      <div className="grayText rd-style">Total Commission</div>
+                    </div>
+                    <img className="arrowStyle" src={window.location.origin+"/images/arrow.svg"} alt="arrow"/>
+                  </div>
+                </>
+              );
+            }
+          )}
+          {/* <div className="card_body3">
             <p className="col1">name</p>
             <div className="col2">
               <p className="p1">1000</p>
@@ -157,7 +190,7 @@ function MyReport() {
               height="50px"
               width="50px"
             />
-          </div>
+          </div> */}
         </Link>
       </div>
     </div>
