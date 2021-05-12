@@ -14,8 +14,9 @@ function MyReportDetails() {
   };
   return (
     <div className="body">
-      <div className="header">
-        <div className="header_left">
+      <div className="headerStyle">
+      <div className="header mb-3 mt-3">
+        <div className="rd-header_left">
           <Link to="/report">
             <img
               src={window.location.origin + "/images/back arrow.svg"}
@@ -27,20 +28,27 @@ function MyReportDetails() {
           </Link>
           <div>Back</div>
         </div>
-        <div className="header_center">
-          <div className="title">{MyReportDetailsData.name}</div>
-          <div className="dates">
+        <div className="header_center"> 
+          
+          <div className="title mb-3">{MyReportDetailsData.name}</div>
+          <div className="grayText">
             {MyReportDetailsData.startDate} - {MyReportDetailsData.endDate}
           </div>
         </div>
         <div className="header_right">
           <img
-            src={window.location.origin + "/images/Search.png"}
+            src={window.location.origin + "/images/search.svg"}
             alt="download"
           />
           <img
-            src={window.location.origin + "/images/download.png"}
+            src={window.location.origin + "/images/download.svg"}
             alt="download"
+          />
+          <img
+            src={window.location.origin + "/images/filter.svg"}
+            id="list"
+            alt="filter"
+            onClick={(id) => handleClick(id)}
           />
           <div
             className="small_card"
@@ -52,13 +60,9 @@ function MyReportDetails() {
             <div className="drop3">FSE name</div>
             <div className="drop4">Project name</div>
           </div>
-          <img
-            src={window.location.origin + "/images/filter.svg"}
-            id="list"
-            alt="filter"
-            onClick={(id) => handleClick(id)}
-          />
+          
         </div>
+      </div>
       </div>
       <div className="card_box">
         {MyReportDetailsData.details.map(
