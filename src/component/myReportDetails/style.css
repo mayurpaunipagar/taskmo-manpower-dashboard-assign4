@@ -123,3 +123,7 @@
   .hrStyle{
     border-top: 2px solid #c6c6c6;
   }
+
+  .rd-header_right{
+    flex-direction: row;
+  }

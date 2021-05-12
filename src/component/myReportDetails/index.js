@@ -1,56 +1,66 @@
 import "./style.css";
-import React from "react";
 import { Link } from "react-router-dom";
 import { MyReportDetailsData } from "./../../dataset";
-
+import React, { useState } from "react";
+import MyDropDown from "./../myDropDown";
 function MyReportDetails() {
-  const handleClick = (id) => {
-    var click = document.getElementById("list-items");
-    if (click.style.display === "none") {
-      click.style.display = "block";
-    } else {
-      click.style.display = "none";
-    }
-  };
+  // const handleClick = (id) => {
+  //   var click = document.getElementById("list-items");
+  //   if (click.style.display === "none") {
+  //     click.style.display = "block";
+  //   } else {
+  //     click.style.display = "none";
+  //   }
+  // };
   return (
     <div className="body">
       <div className="headerStyle">
-      <div className="header mb-3 mt-3">
-        <div className="rd-header_left">
-          <Link to="/report">
-            <img
-              src={window.location.origin + "/images/back-arrow.svg"}
-              alt="arrow"
-              className="margin_top"
-              height="50px"
-              width="50px"
-            />
-          </Link>
-          <div>Back</div>
-        </div>
-        <div className="header_center"> 
-          
-          <div className="title mb-3">{MyReportDetailsData.name}</div>
-          <div className="grayText">
-            {MyReportDetailsData.startDate} - {MyReportDetailsData.endDate}
+        <div className="header mb-3 mt-3">
+          <div className="rd-header_left">
+            <Link to="/report">
+              <img
+                src={window.location.origin + "/images/back-arrow.svg"}
+                alt="arrow"
+                className="margin_top"
+                height="50px"
+                width="50px"
+              />
+            </Link>
+            <div>Back</div>
           </div>
-        </div>
-        <div className="header_right">
-          <img
-            src={window.location.origin + "/images/search.svg"}
-            alt="download"
-          />
-          <img
-            src={window.location.origin + "/images/download.svg"}
-            alt="download"
-          />
-          <img
+          <div className="header_center">
+            <div className="title mb-3">{MyReportDetailsData.name}</div>
+            <div className="grayText">
+              {MyReportDetailsData.startDate} - {MyReportDetailsData.endDate}
+            </div>
+          </div>
+          <div className="rd-header_right">
+            <div>
+              <img
+                src={window.location.origin + "/images/search.svg"}
+                alt="download"
+              />
+            </div>
+            <div>
+              {" "}
+              <img
+                src={window.location.origin + "/images/download.svg"}
+                alt="download"
+              />
+            </div>
+
+            <MyDropDown
+              iconFileName="filter.svg"
+              optionsArr={["Dates", "FSE ID", "FSE name", "Project name"]}
+            />
+            {/* <img
             src={window.location.origin + "/images/filter.svg"}
             id="list"
             alt="filter"
             onClick={(id) => handleClick(id)}
-          />
-          <div
+          /> */}
+
+            {/* <div
             className="small_card"
             id="list-items"
             style={{ display: "none" }}
@@ -59,10 +69,9 @@ function MyReportDetails() {
             <div className="drop2">FSE ID</div>
             <div className="drop3">FSE name</div>
             <div className="drop4">Project name</div>
+          </div> */}
           </div>
-          
         </div>
-      </div>
       </div>
       <div className="card_box">
         {MyReportDetailsData.details.map(
@@ -107,7 +116,9 @@ function MyReportDetails() {
                     <div className="grayText mt-3">Total Commission</div>
                   </div>
                 </div>
-                {MyReportDetailsData.details.length-1===idx?null:<hr className="hrStyle" />}
+                {MyReportDetailsData.details.length - 1 === idx ? null : (
+                  <hr className="hrStyle" />
+                )}
               </>
             );
           }
