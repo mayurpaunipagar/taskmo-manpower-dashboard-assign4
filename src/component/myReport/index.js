@@ -7,50 +7,119 @@ import { Link } from "react-router-dom";
 function MyReport() {
   const [option, setOption] = useState();
   const [bar, setbar] = useState();
+  const [extend, setExtend] = useState(false);
+  const [barSeries,setBarSeries]=useState([
+    {
+      name: "Onboard Merchant",
+      data: [55, 61, 58, 29, 100, 11],
+    },
+    {
+      name: "FSE",
+      data: [30,40,10,5,10,5],
+    },
+    {
+      name: "Promoters",
+      data: [50,20,20,5,5],
+    },
+    {
+      name: "Marketing",
+      data: [10,10,15,15,20,30],
+    },
+    {
+      name: "Job 5",
+      data: [5,10,15,5,10,65],
+    },
+  ]);
+  const [barXCategories, setBarXCategories] = useState([
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
+    "May",
+    "Jun",
+  ]);
+
+  const extendClickHandler = () => {
+    setExtend(!extend);
+    if (!extend) {
+      setBarXCategories(["Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]);
+      setBarSeries([
+        {
+          name: "Onboard Merchant",
+          data: [44, 55, 57, 56, 61, 58],
+        },
+        {
+          name: "FSE",
+          data: [76, 85, 101, 98, 87, 105],
+        },
+        {
+          name: "Promoters",
+          data: [35, 41, 36, 26, 45, 48],
+        },
+        {
+          name: "Marketing",
+          data: [35, 41, 36, 26, 45, 48],
+        },
+        {
+          name: "Job 5",
+          data: [35, 41, 36, 26, 45, 48],
+        },
+      ]);
+    } else {
+      setBarXCategories(["Jan", "Feb", "Mar", "Apr", "May", "Jun"]);
+      setBarSeries([
+        {
+          name: "Onboard Merchant",
+          data: [55, 61, 58, 29, 100, 11],
+        },
+        {
+          name: "FSE",
+          data: [30,40,10,5,10,5],
+        },
+        {
+          name: "Promoters",
+          data: [50,20,20,5,5],
+        },
+        {
+          name: "Marketing",
+          data: [10,10,15,15,20,30],
+        },
+        {
+          name: "Job 5",
+          data: [5,10,15,5,10,65],
+        },
+      ]);
+    }
+  };
 
   useEffect(() => {
     async function fetchData() {
       const result = {
-        series: [40,20,20,10,10],
+        series: [40, 20, 20, 10, 10],
         options: {
           chart: {
             width: "400px",
             type: "pie",
           },
-          
-          labels: ["Onboard Merchant", "FSE", "Promoters", "Marketing", "Job 5"],
-          colors:["#66E4B6","#FF75AE","#A21ACC","#F77AEF","#FFC53C"],
+
+          labels: [
+            "Onboard Merchant",
+            "FSE",
+            "Promoters",
+            "Marketing",
+            "Job 5",
+          ],
+          colors: ["#66E4B6", "#FF75AE", "#A21ACC", "#F77AEF", "#FFC53C"],
           fill: {
-            type: 'gradient',
-            
+            type: "gradient",
           },
         },
       };
 
       const barOption = {
-        series: [
-          {
-            name: "Onboard Merchant",
-            data: [44, 55, 57, 56, 61, 58],
-          },
-          {
-            name: "FSE",
-            data: [76, 85, 101, 98, 87, 105],
-          },
-          {
-            name: "Promoters",
-            data: [35, 41, 36, 26, 45, 48],
-          },
-          {
-            name: "Marketing",
-            data: [35, 41, 36, 26, 45, 48]
-          },{
-            name:"Job 5",
-            data: [35, 41, 36, 26, 45, 48]
-          }
-        ],
+        series: barSeries,
         options: {
-          colors:["#66E4B6","#FF75AE","#A21ACC","#F77AEF","#FFC53C"],
+          colors: ["#66E4B6", "#FF75AE", "#A21ACC", "#F77AEF", "#FFC53C"],
           chart: {
             type: "bar",
           },
@@ -70,14 +139,7 @@ function MyReport() {
             colors: ["transparent"],
           },
           xaxis: {
-            categories: [
-              "Jan",
-              "Feb",
-              "Mar",
-              "Apr",
-              "May",
-              "Jun"
-            ],
+            categories: barXCategories,
           },
           yaxis: {
             title: {
@@ -101,7 +163,7 @@ function MyReport() {
       return await result;
     }
     fetchData();
-  }, []);
+  }, [extend]);
 
   console.log("Option", option);
   console.log("bar", bar);
@@ -119,7 +181,7 @@ function MyReport() {
       </div>
       <div className="graph">
         <div className="pieStyle">
-        <div className="card_body12">
+          <div className="card_body12">
             {option && (
               <Chart
                 options={option.options}
@@ -129,7 +191,7 @@ function MyReport() {
                 width={450}
               />
             )}
-        </div>
+          </div>
         </div>
         <div className="card_body22">
           {bar && (
@@ -141,6 +203,16 @@ function MyReport() {
               width={620}
             />
           )}
+          <div>
+            <img 
+              src={`${window.location.origin}/images/${extend?"back-arrow.svg":"front-arrow.svg"}`}
+              alt="front-arrow"
+              height="30px"
+              width="30px"
+              className="barExtendArrow"
+              onClick={extendClickHandler}
+            />
+          </div>
         </div>
       </div>
       <div className="header1">
@@ -163,24 +235,37 @@ function MyReport() {
                   <div className="report-details-card">
                     <div className="rd-name">{name}</div>
                     <div className="rd-mycol">
-                      <div className="totalTasker mt-3">{totalTaskerInvolved}</div>
-                      <div className="grayText rd-style">Total Tasker Involved</div>
+                      <div className="totalTasker mt-3">
+                        {totalTaskerInvolved}
+                      </div>
+                      <div className="grayText rd-style">
+                        Total Tasker Involved
+                      </div>
                     </div>
                     <div className="rd-mycol ">
-                      <div className="totalTaskerEarnStyle money mt-3">&#8377;{totalTaskerEarnings}</div>
-                      <div className="grayText rd-style">Total Tasker Earnings</div>
+                      <div className="totalTaskerEarnStyle money mt-3">
+                        &#8377;{totalTaskerEarnings}
+                      </div>
+                      <div className="grayText rd-style">
+                        Total Tasker Earnings
+                      </div>
                     </div>
                     <div className="rd-mycol">
-                      <div className="rd-t-commission money mt-3">&#8377;{totalCommission}</div>
+                      <div className="rd-t-commission money mt-3">
+                        &#8377;{totalCommission}
+                      </div>
                       <div className="grayText rd-style">Total Commission</div>
                     </div>
-                    <img className="arrowStyle" src={window.location.origin+"/images/arrow.svg"} alt="arrow"/>
+                    <img
+                      className="arrowStyle"
+                      src={window.location.origin + "/images/arrow.svg"}
+                      alt="arrow"
+                    />
                   </div>
                 </>
               );
             }
           )}
-          
         </Link>
       </div>
     </div>
