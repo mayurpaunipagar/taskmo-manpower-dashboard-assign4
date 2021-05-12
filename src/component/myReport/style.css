@@ -40,17 +40,12 @@
   }
   
   .card_body22 {
-    flex: 0.7;
-    object-fit: contain;
     background: #ffffff 0% 0% no-repeat padding-box;
-    border-radius: 8px;
+    border-radius: 20px;
     opacity: 1;
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    width: 633px;
-    min-height: 250px;
-    border-radius: 20px;
   }
   
   .card_body3 {

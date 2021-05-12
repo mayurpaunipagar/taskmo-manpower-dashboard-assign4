@@ -30,22 +30,29 @@ function MyReport() {
       const barOption = {
         series: [
           {
-            name: "Net Profit",
-            data: [44, 55, 57, 56, 61, 58, 63, 60, 66],
+            name: "Onboard Merchant",
+            data: [44, 55, 57, 56, 61, 58],
           },
           {
-            name: "Revenue",
-            data: [76, 85, 101, 98, 87, 105, 91, 114, 94],
+            name: "FSE",
+            data: [76, 85, 101, 98, 87, 105],
           },
           {
-            name: "Free Cash Flow",
-            data: [35, 41, 36, 26, 45, 48, 52, 53, 41],
+            name: "Promoters",
+            data: [35, 41, 36, 26, 45, 48],
           },
+          {
+            name: "Marketing",
+            data: [35, 41, 36, 26, 45, 48]
+          },{
+            name:"Job 5",
+            data: [35, 41, 36, 26, 45, 48]
+          }
         ],
         options: {
+          colors:["#66E4B6","#FF75AE","#A21ACC","#F77AEF","#FFC53C"],
           chart: {
             type: "bar",
-            height: 400,
           },
           plotOptions: {
             bar: {
@@ -64,15 +71,12 @@ function MyReport() {
           },
           xaxis: {
             categories: [
+              "Jan",
               "Feb",
               "Mar",
               "Apr",
               "May",
-              "Jun",
-              "Jul",
-              "Aug",
-              "Sep",
-              "Oct",
+              "Jun"
             ],
           },
           yaxis: {
@@ -134,7 +138,7 @@ function MyReport() {
               series={bar.series}
               type="bar"
               height={260}
-              width={550}
+              width={620}
             />
           )}
         </div>
