@@ -1,0 +1,24 @@
+.myddStyle{
+    position: relative;
+}
+.myddStyle:hover{
+    cursor: pointer;
+}
+.myddOptions{
+    position: absolute;
+    padding:10px;
+    z-index: 10;
+    top:auto;
+    right:5px;
+    background-color: white;
+    width:max-content;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 45%);
+}
+
+.ddContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+}

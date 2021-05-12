@@ -19,7 +19,7 @@ function MyReportDetails() {
         <div className="rd-header_left">
           <Link to="/report">
             <img
-              src={window.location.origin + "/images/back arrow.svg"}
+              src={window.location.origin + "/images/back-arrow.svg"}
               alt="arrow"
               className="margin_top"
               height="50px"

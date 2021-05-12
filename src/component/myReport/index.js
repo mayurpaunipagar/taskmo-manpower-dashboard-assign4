@@ -3,31 +3,32 @@ import { reportDetails } from "./../../dataset";
 import React, { useState, useEffect } from "react";
 import Chart from "react-apexcharts";
 import { Link } from "react-router-dom";
+import MyDropDown from "../myDropDown";
 
 function MyReport() {
   const [option, setOption] = useState();
   const [bar, setbar] = useState();
   const [extend, setExtend] = useState(false);
-  const [barSeries,setBarSeries]=useState([
+  const [barSeries, setBarSeries] = useState([
     {
       name: "Onboard Merchant",
       data: [55, 61, 58, 29, 100, 11],
     },
     {
       name: "FSE",
-      data: [30,40,10,5,10,5],
+      data: [30, 40, 10, 5, 10, 5],
     },
     {
       name: "Promoters",
-      data: [50,20,20,5,5],
+      data: [50, 20, 20, 5, 5],
     },
     {
       name: "Marketing",
-      data: [10,10,15,15,20,30],
+      data: [10, 10, 15, 15, 20, 30],
     },
     {
       name: "Job 5",
-      data: [5,10,15,5,10,65],
+      data: [5, 10, 15, 5, 10, 65],
     },
   ]);
   const [barXCategories, setBarXCategories] = useState([
@@ -74,19 +75,19 @@ function MyReport() {
         },
         {
           name: "FSE",
-          data: [30,40,10,5,10,5],
+          data: [30, 40, 10, 5, 10, 5],
         },
         {
           name: "Promoters",
-          data: [50,20,20,5,5],
+          data: [50, 20, 20, 5, 5],
         },
         {
           name: "Marketing",
-          data: [10,10,15,15,20,30],
+          data: [10, 10, 15, 15, 20, 30],
         },
         {
           name: "Job 5",
-          data: [5,10,15,5,10,65],
+          data: [5, 10, 15, 5, 10, 65],
         },
       ]);
     }
@@ -172,11 +173,16 @@ function MyReport() {
     <div className="body">
       <div className="header1">
         <p>Report Overview</p>
-        <img
+        {/* <img
           src={window.location.origin + "/images/filter.svg"}
           alt="filter"
           height="50px"
           width="50px"
+        /> */}
+
+        <MyDropDown
+          iconFileName="filter.svg"
+          optionsArr={["Month", "This week", "Dates", "FSE ID","FSE name","Project name"]}
         />
       </div>
       <div className="graph">
@@ -204,8 +210,10 @@ function MyReport() {
             />
           )}
           <div>
-            <img 
-              src={`${window.location.origin}/images/${extend?"back-arrow.svg":"front-arrow.svg"}`}
+            <img
+              src={`${window.location.origin}/images/${
+                extend ? "back-arrow.svg" : "front-arrow.svg"
+              }`}
               alt="front-arrow"
               height="30px"
               width="30px"
