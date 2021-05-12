@@ -11,13 +11,19 @@ function MyReport() {
   useEffect(() => {
     async function fetchData() {
       const result = {
-        series: [44, 55, 13, 43, 22],
+        series: [40,20,20,10,10],
         options: {
           chart: {
-            width: "auto",
+            width: "400px",
             type: "pie",
           },
-          labels: ["Team A", "Team B", "Team C", "Team D", "Team E"],
+          
+          labels: ["Onboard Merchant", "FSE", "Promoters", "Marketing", "Job 5"],
+          colors:["#66E4B6","#FF75AE","#A21ACC","#F77AEF","#FFC53C"],
+          fill: {
+            type: 'gradient',
+            
+          },
         },
       };
 
@@ -39,7 +45,7 @@ function MyReport() {
         options: {
           chart: {
             type: "bar",
-            height: 350,
+            height: 400,
           },
           plotOptions: {
             bar: {
@@ -115,8 +121,8 @@ function MyReport() {
                 options={option.options}
                 series={option.series}
                 type="pie"
-                height={260}
-                width={360}
+                height={450}
+                width={450}
               />
             )}
         </div>
